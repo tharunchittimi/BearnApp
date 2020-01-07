@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1."
+        android:textSize="@dimen/sp16"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginStart="@dimen/dp10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView144"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        app:layout_constraintTop_toTopOf="@id/textView50"
+        app:layout_constraintStart_toEndOf="@id/textView50"
+        app:layout_constraintBottom_toBottomOf="@id/textView50"
+        android:layout_marginStart="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp15"/>
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jennie McGee"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold"
+        android:textColor="@color/Black"
+        app:layout_constraintTop_toTopOf="@id/imageView144"
+        app:layout_constraintBottom_toBottomOf="@id/imageView144"
+        app:layout_constraintStart_toEndOf="@id/imageView144"
+        android:layout_marginStart="@dimen/dp15"/>
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cross"
+        android:layout_marginEnd="@dimen/dp20"
+      app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView51"
+        app:layout_constraintBottom_toBottomOf="@id/textView51"/>
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/light_grey"
+        android:layout_marginTop="@dimen/dp30"
+        android:tint="@android:color/tertiary_text_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView51"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

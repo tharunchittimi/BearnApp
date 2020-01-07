@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="dp125">111.11dp</dimen>
+	<dimen name="dp440">391.11dp</dimen>
+	<dimen name="dp90">80.00dp</dimen>
+	<dimen name="sp30">26.67sp</dimen>
+	<dimen name="sp35">31.11sp</dimen>
+	<dimen name="sp40">35.56sp</dimen>
+	<dimen name="sp8">7.11sp</dimen>
+</resources>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6F7"
+    tools:context=".Summary">
+
+    <include
+        android:id="@+id/toolBarSummary"
+        layout="@layout/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/light_grey"
+        android:tint="@android:color/tertiary_text_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBarSummary" />
+
+    <ImageView
+        android:id="@+id/imageViewSummary"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/curvebottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="TOTAL AMOUNT"
+        android:textColor="@color/greyBrown"
+        android:textSize="@dimen/sp14"
+        app:layout_constraintEnd_toEndOf="@id/imageViewSummary"
+        app:layout_constraintStart_toStartOf="@id/imageViewSummary"
+        app:layout_constraintTop_toTopOf="@id/imageViewSummary" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 720.55"
+        android:textColor="@color/Green"
+        android:textSize="@dimen/sp30"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/imageViewSummary"
+        app:layout_constraintStart_toStartOf="@id/imageViewSummary"
+        app:layout_constraintTop_toBottomOf="@id/txt2" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp5"
+        android:text="+$5.45 today"
+        android:textColor="@color/light_greyy"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintEnd_toEndOf="@id/imageViewSummary"
+        app:layout_constraintStart_toStartOf="@id/imageViewSummary"
+        app:layout_constraintTop_toBottomOf="@id/txt3" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="@dimen/dp20"
+        android:layout_height="@dimen/dp20"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:outlineSpotShadowColor="@color/light_grey"
+        android:src="@drawable/ic_navl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewSummary" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="@dimen/dp20"
+        android:layout_height="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp20"
+        android:outlineSpotShadowColor="@color/light_grey"
+        android:src="@drawable/ic_navr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewSummary" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="January"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/imageView7"
+        app:layout_constraintStart_toEndOf="@id/imageView6"
+        app:layout_constraintTop_toBottomOf="@id/imageViewSummary" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="$35.45"
+        android:textColor="@color/darkBlue"
+        android:textSize="@dimen/sp30"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/imageView7"
+        app:layout_constraintStart_toEndOf="@id/imageView6"
+        app:layout_constraintTop_toBottomOf="@id/txt" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt1"
+        app:srcCompat="@drawable/dash_graph" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="@dimen/dp8"
+        android:layout_height="@dimen/dp8"
+        android:layout_marginStart="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp5"
+        android:background="@color/Green"
+        android:text="o"
+        android:textColor="@color/Green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <TextView
+        android:id="@+id/txtInvite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp10"
+        android:text="Invite friends"
+        android:textColor="@color/light_greyy"
+        android:textSize="@dimen/sp12"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/textView24"
+        app:layout_constraintStart_toEndOf="@id/textView24"
+        app:layout_constraintTop_toTopOf="@id/textView24" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="@dimen/dp8"
+        android:layout_height="@dimen/dp8"
+        android:layout_marginStart="@dimen/dp25"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginEnd="@dimen/dp10"
+        android:background="@color/darkBlue"
+        android:text="o"
+        android:textColor="@color/darkBlue"
+        app:layout_constraintEnd_toStartOf="@id/txtBurned"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <TextView
+        android:id="@+id/txtBurned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp35"
+        android:text="Burned calories"
+        android:textColor="@color/light_greyy"
+        android:textSize="@dimen/sp12"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/textView25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView25" />
+
+    <TextView
+        android:id="@+id/btntxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        android:text="DAY"
+        android:textColor="@color/darkBlue"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView24" />
+
+    <TextView
+        android:id="@+id/btntxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@drawable/button_shpe_one"
+        android:gravity="center"
+        android:text="MONTH"
+        android:textColor="@color/White"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintEnd_toStartOf="@id/btntxt3"
+        app:layout_constraintStart_toEndOf="@id/btntxt1"
+        app:layout_constraintTop_toBottomOf="@id/textView24" />
+
+    <TextView
+        android:id="@+id/btntxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp10"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        android:text="YEAR"
+        android:textColor="@color/Dark_Blue"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

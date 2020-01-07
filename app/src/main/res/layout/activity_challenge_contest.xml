@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ChallengeContest">
+
+    <include
+        android:id="@+id/toolBarChallenge"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/childFrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F3F6F7">
+
+            <ImageView
+                android:id="@+id/imageViewChallengeContest"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/challengecontestviewbtm"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/dp6"
+                android:text="Compete. Burn calories.\nEarn money."
+                android:textColor="@color/White"
+                android:textSize="@dimen/sp20"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewChallengeContest"
+                app:layout_constraintEnd_toEndOf="@id/imageViewChallengeContest"
+                app:layout_constraintStart_toStartOf="@id/imageViewChallengeContest"
+                app:layout_constraintTop_toTopOf="@id/imageViewChallengeContest" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:src="@drawable/arrowdwn_white"
+                app:layout_constraintEnd_toEndOf="@id/textView27"
+                app:layout_constraintStart_toStartOf="@id/textView27"
+                app:layout_constraintTop_toBottomOf="@id/textView27" />
+
+            <LinearLayout
+                android:id="@+id/linea1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/bgspinner"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/linearLayout2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageViewChallengeContest">
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="@dimen/dp140"
+                    android:layout_height="@dimen/dp45"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:popupBackground="@drawable/bgspinner" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/bg_spinner_list"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/linea1"
+                app:layout_constraintTop_toBottomOf="@id/imageViewChallengeContest">
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="@dimen/dp140"
+                    android:layout_height="@dimen/dp45"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:padding="@dimen/dp6"
+                    android:popupBackground="@drawable/bg_spinner_list"
+                    android:textSize="@dimen/sp12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_Challenge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:layoutAnimation="@anim/layout_animation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linea1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnInviteFriends"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="@dimen/dp150"
+                android:layout_height="@dimen/dp55"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp20"
+                android:backgroundTint="@color/Dark_Blue"
+                android:gravity="center"
+                android:text="Set Up Challenge"
+                android:textColor="@color/White"
+                android:textSize="@dimen/sp12"
+                app:cornerRadius="@dimen/dp30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_Challenge" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

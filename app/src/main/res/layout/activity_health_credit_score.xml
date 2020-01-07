@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6F7"
+    tools:context=".HealthCreditScore">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_HSC"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layoutAnimation="@anim/layout_animation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <include
+        android:id="@+id/toolbarHCS"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDash"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/light_grey"
+        android:tint="@android:color/tertiary_text_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarHCS" />
+
+    <ImageView
+        android:id="@+id/imageViewDashboard1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/curvebottomdashboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewDash" />
+
+    <com.ldoublem.ringPregressLibrary.RingProgress
+        android:id="@+id/lv_ringp"
+        android:layout_width="230dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="@dimen/dp35"
+        android:max="100"
+        android:progress="0"
+        app:bgColor="#707070"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewDashboard1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageViewDashboard1"
+        app:ringSweepAngle="200"
+        app:ringWidthScale="0.2"
+        app:rotate="270"
+        app:showBackground="true"
+        app:showBackgroundShadow="true"
+        app:showRingCorner="true">
+
+    </com.ldoublem.ringPregressLibrary.RingProgress>
+
+    <com.ldoublem.ringPregressLibrary.RingProgress
+        android:id="@+id/lv_ringpR"
+        android:layout_width="230dp"
+        android:layout_height="250dp"
+        android:layout_marginEnd="@dimen/dp35"
+        app:bgColor="#707070"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewDashboard1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageViewDashboard1"
+        app:ringSweepAngle="200"
+        app:ringWidthScale="0.2"
+        app:rotate="270"
+        app:showBackground="true"
+        app:showBackgroundShadow="true"
+        app:showRingCorner="true">
+
+    </com.ldoublem.ringPregressLibrary.RingProgress>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="850"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/sp24"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewDashboard1"
+        app:layout_constraintEnd_toEndOf="@id/imageViewDashboard1"
+        app:layout_constraintStart_toStartOf="@id/imageViewDashboard1"
+        app:layout_constraintTop_toTopOf="@id/imageViewDashboard1" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp3"
+        android:text="Health Score"
+        android:textColor="@color/light_greyy"
+        android:textSize="@dimen/sp14"
+        app:layout_constraintEnd_toEndOf="@id/textView52"
+        app:layout_constraintStart_toStartOf="@id/textView52"
+        app:layout_constraintTop_toBottomOf="@id/textView52" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

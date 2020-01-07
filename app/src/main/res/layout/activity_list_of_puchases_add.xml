@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListOfPuchasesAdd">
+
+    <include
+        android:id="@+id/toolBarLOPAdd"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/light_grey"
+        android:tint="@android:color/tertiary_text_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBarLOPAdd" />
+
+    <ImageView
+        android:id="@+id/imageViewSummary1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/curvebottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:background="@drawable/bg_lop_curv"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp20"
+        android:paddingBottom="@dimen/dp3"
+        android:text="Done"
+        app:layout_constraintEnd_toEndOf="@id/imageViewSummary1"
+        app:layout_constraintStart_toStartOf="@id/imageViewSummary1"
+        app:layout_constraintTop_toTopOf="@id/imageViewSummary1" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp5"
+        android:gravity="center"
+        android:text="Wholefoods Grocery"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/sp20"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/imageViewSummary1"
+        app:layout_constraintStart_toStartOf="@id/imageViewSummary1"
+        app:layout_constraintTop_toBottomOf="@id/textView46" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp5"
+        android:gravity="center"
+        android:text="+ $0.5"
+        android:textColor="@color/Green"
+        android:textSize="@dimen/sp24"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/imageViewSummary1"
+        app:layout_constraintStart_toStartOf="@id/imageViewSummary1"
+        app:layout_constraintTop_toBottomOf="@id/textView47" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp5"
+        android:gravity="center"
+        android:text="Cashback"
+        android:textColor="@color/light_greyy"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintEnd_toEndOf="@id/imageViewSummary1"
+        app:layout_constraintStart_toStartOf="@id/imageViewSummary1"
+        app:layout_constraintTop_toBottomOf="@id/textView48" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp25"
+        android:text="PUCHASE"
+        android:textColor="@color/light_greyy"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewSummary1" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp25"
+        android:layout_marginEnd="@dimen/dp10"
+        android:text="CASHBACK"
+        android:textColor="@color/light_greyy"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewSummary1" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp25"
+        android:layout_marginEnd="@dimen/dp20"
+        android:text="PRICE"
+        android:textColor="@color/light_greyy"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintEnd_toStartOf="@id/textView31"
+        app:layout_constraintTop_toBottomOf="@id/imageViewSummary1" />
+
+    <TextView
+        android:id="@+id/textView123"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginTop="@dimen/dp5"
+        android:background="@color/light_grey"
+        android:tint="@android:color/tertiary_text_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView32" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_LOPADD"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp5"
+        android:layoutAnimation="@anim/layout_animation"
+        app:layout_constraintBottom_toTopOf="@id/textView44"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView32" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:text="TOTAL CASHBACK"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/sp14"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_LOPADD" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp10"
+        android:text="$1.25"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/sp14"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_LOPADD" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

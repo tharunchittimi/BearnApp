@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Dashboard">
+
+    <include
+        android:id="@+id/toolBarSetup"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F3F6F7"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F3F6F7"
+            tools:context=".SetupChallenge">
+
+            <TextView
+                android:id="@+id/textViewSetup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/light_grey"
+                android:tint="@android:color/tertiary_text_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:background="@drawable/bg_set_up"
+                android:drawableEnd="@drawable/ic_repeat"
+                android:padding="@dimen/dp8"
+                android:paddingStart="@dimen/dp20"
+                android:paddingEnd="@dimen/dp20"
+                android:text="2200 calories burned per day"
+                android:textSize="@dimen/sp14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewSetup" />
+
+            <EditText
+                android:id="@+id/editView2"
+                android:layout_width="@dimen/dp130"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/bg_set_up"
+                android:drawableStart="@drawable/ic_invitation"
+                android:padding="@dimen/dp8"
+                android:paddingStart="@dimen/dp20"
+                android:text="   08/22"
+                android:textSize="@dimen/sp14"
+                app:layout_constraintEnd_toStartOf="@id/linear1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editView1" />
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_set_up"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/editView2"
+                app:layout_constraintTop_toBottomOf="@id/editView1"
+                app:layout_constraintTop_toTopOf="@id/editView2">
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="@dimen/dp130"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:popupBackground="@drawable/bg_spinner_list" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:background="@drawable/bgspinner"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linear1">
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp45"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:padding="@dimen/dp6"
+                    android:popupBackground="@drawable/bg_spinner_list"
+                    android:textSize="@dimen/sp12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="Start as soon as all participants accept \nthe challenge."
+                android:textColor="@color/light_greyy"
+                android:textSize="@dimen/sp14"
+                app:layout_constraintEnd_toEndOf="@id/linearLayout2"
+                app:layout_constraintStart_toStartOf="@id/linearLayout2"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout2" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp25"
+                android:background="@drawable/bg_invite_p"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/checkBox" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp20"
+                android:text="Invite more participants"
+                android:textColor="@color/Dark_Blue"
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/view"
+                app:layout_constraintStart_toEndOf="@id/image1"
+                app:layout_constraintTop_toTopOf="@id/view" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp15"
+                android:src="@drawable/ic_add"
+                app:layout_constraintBottom_toBottomOf="@id/textView29"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textView29" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp20"
+                android:src="@drawable/ic_for"
+                app:layout_constraintBottom_toBottomOf="@id/textView29"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textView29" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp25"
+                android:text="PARTICIPANTS"
+                android:textColor="@color/light_greyy"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginEnd="@dimen/dp10"
+                android:background="@drawable/bg_text_setup"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp20"
+                android:paddingBottom="@dimen/dp3"
+                android:text="NEARBY"
+                android:textColor="@color/light_greyy"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginEnd="@dimen/dp20"
+                android:background="@drawable/bg_text_setup"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp20"
+                android:paddingBottom="@dimen/dp3"
+                android:text="FRIENDS"
+                android:textColor="@color/light_greyy"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintEnd_toStartOf="@id/textView31"
+                app:layout_constraintTop_toBottomOf="@id/view" />
+
+            <TextView
+                android:id="@+id/textView123"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/light_grey"
+                android:tint="@android:color/tertiary_text_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView32" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_setUpChallenge"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/dp5"
+                android:overScrollMode="never"
+                android:layoutAnimation="@anim/layout_animation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView32" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnInvite"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="@dimen/dp150"
+                android:layout_height="@dimen/dp55"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginBottom="@dimen/dp20"
+                android:gravity="center"
+                android:text="INVITE"
+                android:textColor="@color/White"
+                app:cornerRadius="@dimen/dp30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_setUpChallenge" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

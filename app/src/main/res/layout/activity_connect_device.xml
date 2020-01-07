@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".ConnectDevice">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/connectdevice">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/connect_device_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp30"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="@dimen/dp15"
+            android:text="Connect devices and apps"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dp3"
+            android:text="Launch the app on your watch and tap \nconnect to get started!"
+            android:textSize="@dimen/sp12"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp30"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:layout_constraintEnd_toEndOf="@id/textView5"
+            app:layout_constraintStart_toStartOf="@id/textView5"
+            app:layout_constraintTop_toBottomOf="@id/textView5"
+            app:tabGravity="fill"
+            app:tabInlineLabel="true">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:text="APPS" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="DEVICES" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <com.yarolegovich.discretescrollview.DiscreteScrollView
+            android:id="@+id/item_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp40"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recyclerViewApp" />
+
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_picker" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutAnimation="@anim/layout_animation"
+            android:paddingBottom="@dimen/dp40"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp30"
+            android:gravity="center"
+            android:text="SWIPE TO CHOOSE ANOTHER APPLICATION"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/sp11"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/btnApp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_picker" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnApp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp55"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginBottom="@dimen/dp20"
+            android:gravity="center"
+            android:text="CONNECT"
+            android:textColor="@color/White"
+            app:cornerRadius="@dimen/dp30"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView12" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKIP"
+            android:textColor="@color/actBar"
+            android:textSize="@dimen/sp12"
+            app:layout_constraintBottom_toBottomOf="@id/btnApp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnApp"
+            app:layout_constraintTop_toTopOf="@id/btnApp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

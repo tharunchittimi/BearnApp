@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/litegreyBrown"
+    tools:context=".OnBoardingTrailsActivity">
+
+    <com.github.florent37.shapeofview.shapes.ArcView
+        android:id="@+id/arcLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shape_arc_height="50dp"
+        app:shape_arc_position="bottom"
+        tools:ignore="RtlHardcoded"
+        tools:targetApi="lollipop">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lav_thumbUp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/White"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/gym"
+            app:lottie_speed="1.25" />
+
+        <!--        <VideoView-->
+        <!--            android:id="@+id/videoView"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="@dimen/dp400"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+    <!--    <VideoView-->
+    <!--        android:id="@+id/videoView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/guideline"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp40"
+        android:gravity="center"
+        android:text="Question"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/sp18"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAnswers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp25"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp25"
+        android:layoutAnimation="@anim/layout_animation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtQuestion" />
+
+    <ImageView
+        android:id="@+id/dot1"
+        android:layout_width="@dimen/dp10"
+        android:layout_height="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        app:layout_constraintBottom_toTopOf="@id/txtQuestion"
+        app:layout_constraintEnd_toStartOf="@id/dot2" />
+
+    <ImageView
+        android:id="@+id/dot2"
+        android:layout_width="@dimen/dp10"
+        android:layout_height="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        app:layout_constraintBottom_toTopOf="@id/txtQuestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/dot3"
+        android:layout_width="@dimen/dp10"
+        android:layout_height="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        app:layout_constraintBottom_toTopOf="@id/txtQuestion"
+        app:layout_constraintStart_toEndOf="@id/dot2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

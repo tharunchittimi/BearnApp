@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp80"
+    android:layout_marginLeft="@dimen/dp10"
+    android:layout_marginRight="@dimen/dp10"
+    app:cardCornerRadius="@dimen/dp10"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/bg_list_of_purchase"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingTop="@dimen/dp3"
+            android:paddingRight="@dimen/dp20"
+            android:paddingBottom="@dimen/dp3"
+            android:text="PENDING"
+            android:textColor="@color/White"
+            android:textSize="@dimen/sp10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="Salewa Running \nShoes"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/textView36"
+            app:layout_constraintTop_toBottomOf="@id/textView36" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp30"
+            android:text="2"
+            android:textColor="@color/light_greyy"
+            android:textSize="@dimen/sp16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textView37"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp20"
+            android:text="+$1"
+            android:textColor="@color/Green"
+            android:textSize="@dimen/sp16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

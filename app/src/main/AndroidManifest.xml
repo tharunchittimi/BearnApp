@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bearnapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bearnlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bearnlogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ListOfPuchasesAdd"
+            android:theme="@style/AppThemeSummary">
+
+        </activity>
+        <activity
+            android:name=".ListOfPurchases"
+            android:theme="@style/AppThemeSummary"
+            >
+
+        </activity>
+        <activity
+            android:name=".SetupChallenge"
+            android:theme="@style/AppThemeSummary">
+
+        </activity>
+        <activity
+            android:name=".ChallengeContest"
+            android:theme="@style/AppThemeSummary"></activity>
+        <activity
+            android:name=".HealthCreditScore"
+            android:theme="@style/AppThemeSummary">
+
+        </activity>
+        <activity
+            android:name=".Offer"
+            android:theme="@style/AppThemeInviteFriends" />
+        <activity
+            android:name=".InviteFreinds"
+            android:theme="@style/AppThemeInviteFriends" />
+        <activity
+            android:name=".Invite"
+            android:theme="@style/AppThemeInvite"></activity>
+        <activity
+            android:name=".Dashboard"
+            android:theme="@style/AppThemeSummary">
+
+        </activity>
+        <activity
+            android:name=".Summary"
+            android:theme="@style/AppThemeSummary" />
+        <activity
+            android:name=".ConnectDevice"
+            android:theme="@style/AppThemeConnectDevice" />
+        <activity android:name=".OnBoardingTrailsActivity" >
+
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp100"
+        android:layout_marginStart="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp30"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="@dimen/dp6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewApp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="My Fitness PAll"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/card1"
+        app:layout_constraintStart_toStartOf="@id/card1"
+        app:layout_constraintTop_toBottomOf="@id/card1" />
+
+    <ImageView
+        android:id="@+id/checkBtn"
+        android:layout_width="@dimen/dp25"
+        android:layout_height="@dimen/dp25"
+        android:layout_marginStart="@dimen/dp80"
+        android:layout_marginTop="@dimen/dp20"
+        android:elevation="@dimen/dp15"
+        android:src="@drawable/ic_badge"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@id/card1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="lollipop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

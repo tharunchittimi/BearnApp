@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6F7"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".ConnectDevice">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/dp20"
+        tools:context=".Invite">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Get 10% of each friend \nand what they earn"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnInvite"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp55"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginBottom="@dimen/dp20"
+            android:gravity="center"
+            android:text="INVITE"
+            android:textColor="@color/White"
+            app:cornerRadius="@dimen/dp30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView6" />
+
+        <TextView
+            android:id="@+id/textViewDash"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@color/light_grey"
+            android:tint="@android:color/tertiary_text_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnInvite" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center"
+            android:text="Earned Summary"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDash" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MORE INFO"
+            android:textColor="@color/Green"
+            android:textSize="@dimen/sp12"
+            app:layout_constraintBottom_toBottomOf="@id/textView9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textView9"
+            app:layout_constraintTop_toTopOf="@id/textView9" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="$200.00"
+            android:textColor="@color/Dark_Blue"
+            android:textSize="@dimen/sp25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView9"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="156dp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dash_graph"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView11" />
+
+        <TextView
+            android:id="@+id/textViewInvite"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@color/light_grey"
+            android:tint="@android:color/tertiary_text_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView8" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp10"
+            android:text="Mar"
+            android:textColor="@color/light_greyy"
+            android:textSize="@dimen/sp13"
+            app:layout_constraintBottom_toTopOf="@id/textViewInvite"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:text="Apr"
+            android:textSize="@dimen/sp13"
+            app:layout_constraintBottom_toTopOf="@id/textViewInvite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp10"
+            android:text="May"
+            android:textSize="@dimen/sp13"
+            app:layout_constraintBottom_toTopOf="@id/textViewInvite"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardInvite1"
+            android:layout_width="@dimen/dp130"
+            android:layout_height="@dimen/dp220"
+            android:layout_marginStart="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp10"
+            android:foregroundGravity="center"
+            app:cardCornerRadius="@dimen/dp6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/cardInvite2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewInvite">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewInvite1"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="Beulah Bower"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/imageViewInvite1"
+                    app:layout_constraintStart_toStartOf="@id/imageViewInvite1"
+                    app:layout_constraintTop_toBottomOf="@id/imageViewInvite1" />
+
+                <TextView
+                    android:id="@+id/txt16"
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:background="@color/light_grey"
+                    android:tint="@android:color/tertiary_text_light"
+                    app:layout_constraintEnd_toEndOf="@id/textView16"
+                    app:layout_constraintStart_toStartOf="@id/textView16"
+                    app:layout_constraintTop_toBottomOf="@id/textView16" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:text="$3.20"
+                    android:textColor="@color/Green"
+                    android:textSize="@dimen/sp18"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/txt16"
+                    app:layout_constraintStart_toStartOf="@id/txt16"
+                    app:layout_constraintTop_toBottomOf="@id/txt16" />
+
+                <TextView
+                    android:id="@+id/btntxt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/button_shape"
+                    android:gravity="center"
+                    android:text="CASH OUT"
+                    android:textColor="@color/darkBlue"
+                    android:textSize="@dimen/sp12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView17" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardInvite2"
+            android:layout_width="@dimen/dp130"
+            android:layout_height="@dimen/dp220"
+            android:layout_marginTop="@dimen/dp20"
+            android:foregroundGravity="center"
+            app:cardCornerRadius="@dimen/dp6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardInvite1"
+            app:layout_constraintTop_toBottomOf="@id/textViewInvite">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewInvite2"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="Bill Ballard"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/imageViewInvite2"
+                    app:layout_constraintStart_toStartOf="@id/imageViewInvite2"
+                    app:layout_constraintTop_toBottomOf="@id/imageViewInvite2" />
+
+                <TextView
+                    android:id="@+id/txt19"
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:background="@color/light_grey"
+                    android:tint="@android:color/tertiary_text_light"
+                    app:layout_constraintEnd_toEndOf="@id/textView18"
+                    app:layout_constraintStart_toStartOf="@id/textView18"
+                    app:layout_constraintTop_toBottomOf="@id/textView18" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:text="$1.20"
+                    android:textColor="@color/Green"
+                    android:textSize="@dimen/sp18"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/txt19"
+                    app:layout_constraintStart_toStartOf="@id/txt19"
+                    app:layout_constraintTop_toBottomOf="@id/txt19" />
+
+                <TextView
+                    android:id="@+id/btntxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/button_shape"
+                    android:gravity="center"
+                    android:text="CASH OUT"
+                    android:textColor="@color/darkBlue"
+                    android:textSize="@dimen/sp12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView20" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

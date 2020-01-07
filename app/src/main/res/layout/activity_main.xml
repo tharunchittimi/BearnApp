@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp350"
+        android:background="@drawable/execrise_run"
+        app:layout_constraintBottom_toTopOf="@id/viewBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/curvetop"
+        app:layout_constraintBottom_toTopOf="@id/viewBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/viewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/White"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear1" />
+
+    <ScrollView
+        android:id="@+id/childFrag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageView1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp30">
+
+            <TextView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/bg_for_letter_b"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="@color/White"
+                android:textSize="@dimen/sp35"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/guideline2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="EARN"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/sp30"
+                app:layout_constraintBottom_toBottomOf="@id/imageView2"
+                app:layout_constraintStart_toEndOf="@id/imageView2"
+                app:layout_constraintTop_toTopOf="@id/imageView2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="earn while you burn"
+                android:textColor="@color/Green"
+                android:textSize="@dimen/sp10"
+                app:layout_constraintBottom_toBottomOf="@id/textView"
+                app:layout_constraintStart_toStartOf="@id/textView"
+                app:layout_constraintTop_toBottomOf="@id/textView" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:layout_marginTop="@dimen/dp40"
+                android:layout_marginRight="@dimen/dp25"
+                app:layout_constraintEnd_toStartOf="@id/imageView4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView2"
+                app:layout_constraintVertical_chainStyle="spread"
+                app:srcCompat="@drawable/fb" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:src="@drawable/bg_insta"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView2"
+                app:layout_constraintTop_toTopOf="@id/imageView3"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:layout_marginLeft="@dimen/dp25"
+                android:src="@drawable/bg_twitter"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imageView4"
+                app:layout_constraintTop_toBottomOf="@id/imageView2"
+                app:layout_constraintTop_toTopOf="@id/imageView4"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <RelativeLayout
+                android:id="@+id/relative11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp40"
+                android:layout_marginTop="@dimen/dp40"
+                android:layout_marginRight="@dimen/dp40"
+                android:background="@drawable/border1"
+                android:gravity="center"
+                android:layoutAnimation="@anim/layout_animation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView3">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_mail"
+                    android:gravity="center"
+                    android:hint="Mail"
+                    android:inputType="textCapSentences" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp40"
+                android:layout_marginRight="@dimen/dp40"
+                android:background="@drawable/border2"
+                android:layoutAnimation="@anim/layout_animation"
+                app:layout_constraintEnd_toEndOf="@id/relative11"
+                app:layout_constraintStart_toStartOf="@id/relative11"
+                app:layout_constraintTop_toBottomOf="@id/relative11">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawableLeft="@drawable/ic_lock"
+                    android:drawableEnd="@drawable/ic_visibility_on"
+                    android:drawableRight="@drawable/ic_visibility_on"
+                    android:gravity="center"
+                    android:hint="Password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword" />
+            </RelativeLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="@dimen/dp150"
+                android:layout_height="@dimen/dp60"
+                android:layout_marginTop="@dimen/dp70"
+                android:background="@color/actBar"
+                android:text="SIGN IN"
+                android:textColor="@color/White"
+                android:textSize="@dimen/sp14"
+                app:backgroundTint="@color/Dark_Blue"
+                app:cornerRadius="@dimen/dp30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/relative2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp15"
+                android:text="SIGN UP"
+                android:textColor="@color/Dark_Blue"
+                android:textSize="@dimen/sp14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.32" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.66" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/tools"
+        android:layout_width="@dimen/dp140"
+        android:layout_height="@dimen/dp140"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="@dimen/dp40"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:cardPreventCornerOverlap="false">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardview_stroke">
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="@dimen/dp8"
+                android:layout_height="@dimen/dp8"
+                android:layout_marginLeft="@dimen/dp30"
+                android:src="@drawable/dot"
+                app:layout_constraintBottom_toBottomOf="@id/img"
+                app:layout_constraintRight_toLeftOf="@id/img"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/img" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:layout_marginTop="@dimen/dp10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cardTxt"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp20"
+                android:background="@drawable/bg_text"
+                android:gravity="center"
+                android:text="PRO"
+                android:textColor="@color/White"
+                android:textSize="@dimen/sp8"
+                app:layout_constraintBottom_toBottomOf="@id/img"
+                app:layout_constraintStart_toEndOf="@id/img"
+                app:layout_constraintTop_toTopOf="@id/img" />
+
+            <TextView
+                android:id="@+id/cardTxt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center"
+                android:text="Jonathan \nMcGomery"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img" />
+
+            <TextView
+                android:id="@+id/cardTxt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center"
+                android:text="$"
+                android:textSize="@dimen/sp14"
+                app:layout_constraintEnd_toStartOf="@id/cardTxt4"
+                app:layout_constraintStart_toStartOf="@id/cardTxt2"
+                app:layout_constraintTop_toBottomOf="@id/cardTxt2" />
+
+            <TextView
+                android:id="@+id/cardTxt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center"
+                android:text="120.25"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardTxt2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

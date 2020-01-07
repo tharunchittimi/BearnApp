@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6F7"
+    tools:context=".ListOfPurchases">
+
+    <include
+        android:id="@+id/toolBarLOP"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewLOP"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp160"
+        android:scaleType="fitXY"
+        android:src="@drawable/challengecontestviewbtm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBarLOP" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="Credit Card for Your Health"
+        android:textColor="#B9E0F0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageViewLOP" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp15"
+        android:gravity="right"
+        android:lineSpacingExtra="@dimen/dp2"
+        android:text="Earn Cashback \nfor every healthy \npurchase"
+        android:textColor="@color/White"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView28" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp6"
+        android:src="@drawable/ic_downarrow1"
+        app:layout_constraintEnd_toEndOf="@id/textView33"
+        app:layout_constraintTop_toBottomOf="@id/textView33" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/atm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textView33"
+        app:layout_constraintTop_toTopOf="@id/textView33" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="PURCHASE / STATUS"
+        android:textColor="@color/light_greyy"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLOP" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp40"
+        android:text="CASHBACK"
+        android:textColor="@color/light_greyy"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintBottom_toBottomOf="@id/textView34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLOP" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_LOP"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layoutAnimation="@anim/layout_animation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView35" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
