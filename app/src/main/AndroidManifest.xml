@@ -14,53 +14,53 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ListOfPuchasesAdd"
+        <activity android:name=".listofpurchases.ListOfPuchasesAdd"
             android:theme="@style/AppThemeSummary">
 
         </activity>
         <activity
-            android:name=".ListOfPurchases"
+            android:name=".listofpurchases.ListOfPurchases"
             android:theme="@style/AppThemeSummary"
             >
 
         </activity>
         <activity
-            android:name=".SetupChallenge"
+            android:name=".setupchallenge.SetupChallenge"
             android:theme="@style/AppThemeSummary">
 
         </activity>
         <activity
-            android:name=".ChallengeContest"
+            android:name=".challengecontest.ChallengeContest"
             android:theme="@style/AppThemeSummary"></activity>
         <activity
-            android:name=".HealthCreditScore"
+            android:name=".healthcreditscore.HealthCreditScore"
             android:theme="@style/AppThemeSummary">
 
         </activity>
         <activity
-            android:name=".Offer"
+            android:name=".offers.Offer"
             android:theme="@style/AppThemeInviteFriends" />
         <activity
-            android:name=".InviteFreinds"
+            android:name=".invite.InviteFreinds"
             android:theme="@style/AppThemeInviteFriends" />
         <activity
-            android:name=".Invite"
+            android:name=".invite.Invite"
             android:theme="@style/AppThemeInvite"></activity>
         <activity
-            android:name=".Dashboard"
+            android:name=".dashboard.Dashboard"
             android:theme="@style/AppThemeSummary">
 
         </activity>
         <activity
-            android:name=".Summary"
+            android:name=".summary.Summary"
             android:theme="@style/AppThemeSummary" />
         <activity
-            android:name=".ConnectDevice"
+            android:name=".connectdevices.ConnectDevice"
             android:theme="@style/AppThemeConnectDevice" />
-        <activity android:name=".OnBoardingTrailsActivity" >
+        <activity android:name=".qusandanswer.OnBoardingTrailsActivity" >
 
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".login.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

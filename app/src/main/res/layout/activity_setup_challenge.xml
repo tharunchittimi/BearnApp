@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".Dashboard">
+    tools:context=".dashboard.Dashboard">
 
     <include
         android:id="@+id/toolBarSetup"
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#F3F6F7"
-            tools:context=".SetupChallenge">
+            tools:context=".setupchallenge.SetupChallenge">
 
             <TextView
                 android:id="@+id/textViewSetup"
